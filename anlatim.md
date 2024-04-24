@@ -2,6 +2,9 @@
 
 **AMAÇ:** Fitness ve sağlık alanında kullanıcıların ihtiyaç duyduğu takviye ürünlerini sunmak için bir çevrimiçi platform oluşturmak.
 
+**Hedef Kitle:**
+Bu proje, fitness ve sağlıkla ilgilenen ve takviye ürünlerine ihtiyaç duyan geniş bir kitleye hitap eder. Ayrıca spor yapanlar, fitness meraklıları, sağlık bilincine sahip bireyler ve spor salonları gibi işletmeler de potansiyel kullanıcılar arasında olabilir.
+
 **ÖZELLİKLER:**
 
 **ANA SAYFA:** 
