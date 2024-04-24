@@ -1,0 +1,12 @@
+Proje Adı: FitSupps Web Sitesi
+
+Amaç: Fitness ve sağlık alanında kullanıcıların ihtiyaç duyduğu takviye ürünlerini sunmak için bir çevrimiçi platform oluşturmak.
+
+Özellikler:
+
+Ana Sayfa: En popüler ürünleri ve kampanyaları vurgulayan bir başlangıç noktası.
+Ürün Kategorileri: Protein tozları, vitaminler, amino asitler gibi ürünleri kolayca bulabilmeleri için kategorilere ayrılmış bir liste.
+Ürün Sayfaları: Her bir ürün için detaylı açıklama, fiyat, içerik bilgileri ve müşteri yorumları.
+Kullanıcı Hesabı: Kullanıcıların kayıt olabileceği ve sipariş geçmişlerini ve favori ürünlerini takip edebilecekleri kişisel hesaplar.
+Sepet: Kullanıcıların alışveriş sepetinde bulunan ürünleri yönetebilecekleri ve ödeme yapabilecekleri bir bölüm.
+Ödeme ve Kargo: Farklı ödeme seçenekleri sunan ve müşterilere kargo takip imkanı sağlayan bir sistem.
