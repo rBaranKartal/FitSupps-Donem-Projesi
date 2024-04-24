@@ -10,3 +10,26 @@ Ana Sayfa: En popüler ürünleri ve kampanyaları vurgulayan bir başlangıç n
 Kullanıcı Hesabı: Kullanıcıların kayıt olabileceği ve sipariş geçmişlerini ve favori ürünlerini takip edebilecekleri kişisel hesaplar.
 Sepet: Kullanıcıların alışveriş sepetinde bulunan ürünleri yönetebilecekleri ve ödeme yapabilecekleri bir bölüm.
 Ödeme ve Kargo: Farklı ödeme seçenekleri sunan ve müşterilere kargo takip imkanı sağlayan bir sistem.
+
+Websitesi Dizaynı:
+
+**Ana Sayfa:**
+- Header: Logo, site navigasyonu, giriş/yeni üyelik butonları.
+- Ürünlerin görsel galerisi: En çok satılan veya yeni eklenen ürünlerin görselleri ve kısa açıklamaları.
+- İncelemeler: Müşteri yorumları ve puanlamaları.
+- Footer: İletişim bilgileri, sosyal medya bağlantıları, yardım/SSS linkleri.
+
+**Ürün Sayfası:**
+- Ürün fotoğrafı, açıklaması, fiyatı ve kullanıcı yorumları.
+- Ürünü sepete ekle ve satın al butonları.
+- İlgili ürün önerileri ve benzer ürünler.
+
+**Kullanıcı Hesabı:**
+- Giriş/yeni üyelik
+- Kişisel bilgiler, sipariş geçmişi, favori ürünler.
+- Ödeme bilgileri ve adres defteri.
+
+**Yönetim Paneli (Admin):**
+- Ürün ekleme, düzenleme, silme.
+- Kullanıcı yönetimi ve sipariş takibi.
+- Stok ve satış raporları.
