@@ -47,3 +47,17 @@ Bu proje, fitness ve sağlıkla ilgilenen ve takviye ürünlerine ihtiyaç duyan
 - **Ürün ekleme, düzenleme, silme.**
 - **Kullanıcı yönetimi ve sipariş takibi.**
 - **Stok ve satış raporları.**
+
+**TEKNİK ÖZELLİKLER**
+
+**Front-end (Ön Yüz) Dilleri:**
+- **HTML**
+- **CSS**
+- **JavaScript**
+
+**Back-end (Arka Yüz) Dilleri:**
+- **JavaScript**
+- **C#**
+
+**Veritabanı Dilleri:**
+- **SQLite(Değişebilir)**
