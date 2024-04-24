@@ -25,7 +25,7 @@ Bu proje, fitness ve sağlıkla ilgilenen ve takviye ürünlerine ihtiyaç duyan
 **ÖDEME VE KARGO:** 
 - Farklı ödeme seçenekleri sunan ve müşterilere kargo takip imkanı sağlayan bir sistem.
 
-**WEBSİTESİ DİZAYNI:**
+<h1>**WEBSİTESİ DİZAYNI:**<h1>
 
 **ANA SAYFA:**
 - **Header:** Logo, site navigasyonu, giriş/yeni üyelik butonları.
