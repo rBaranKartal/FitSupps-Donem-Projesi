@@ -1,4 +1,4 @@
-**PROJE ADI:** FitSupps Web Sitesi
+<h1>**PROJE ADI:** FitSupps Web Sitesi<h1>
 
 **AMAÇ:** Fitness ve sağlık alanında kullanıcıların ihtiyaç duyduğu takviye ürünlerini sunmak için bir çevrimiçi platform oluşturmak.
 
