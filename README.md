@@ -60,3 +60,11 @@ Bu proje, fitness ve sağlıkla ilgilenen ve takviye ürünlerine ihtiyaç duyan
 
 **Veritabanı Dilleri:**
 - **MySQL**
+
+
+**Görüntüler**
+![alt text]((https://imgur.com/a/fF8ZxbY))
+
+
+
+
