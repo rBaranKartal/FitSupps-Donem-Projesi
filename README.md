@@ -14,7 +14,7 @@ Bu proje, fitness ve sağlıkla ilgilenen ve takviye ürünlerine ihtiyaç duyan
 - Protein tozları, vitaminler, amino asitler gibi ürünleri kolayca bulabilmeleri için kategorilere ayrılmış bir liste.
 
 **ÜRÜN SAYFALARI:** 
-- Her bir ürün için detaylı açıklama, fiyat, içerik bilgileri ve müşteri yorumları.
+- Her bir ürün için detaylı açıklama, fiyat, içerik bilgileri.
 
 **KULLANICI HESABI:** 
 - Kullanıcıların kayıt olabileceği ve sipariş geçmişlerini ve favori ürünlerini takip edebilecekleri kişisel hesaplar.
@@ -34,7 +34,7 @@ Bu proje, fitness ve sağlıkla ilgilenen ve takviye ürünlerine ihtiyaç duyan
 - **Footer:** İletişim bilgileri, sosyal medya bağlantıları, yardım/SSS linkleri.
 
 **ÜRÜN SAYFASI:**
-- **Ürün fotoğrafı, açıklaması, fiyatı ve kullanıcı yorumları.**
+- **Ürün fotoğrafı, açıklaması ve fiyatı**
 - **Ürünü sepete ekle ve satın al butonları.**
 - **İlgili ürün önerileri ve benzer ürünler.**
 
@@ -46,7 +46,6 @@ Bu proje, fitness ve sağlıkla ilgilenen ve takviye ürünlerine ihtiyaç duyan
 **YÖNETİM PANELİ (ADMIN):**
 - **Ürün ekleme, düzenleme, silme.**
 - **Kullanıcı yönetimi ve sipariş takibi.**
-- **Stok ve satış raporları.**
 
 **TEKNİK ÖZELLİKLER**
 
@@ -60,4 +59,4 @@ Bu proje, fitness ve sağlıkla ilgilenen ve takviye ürünlerine ihtiyaç duyan
 - **C#**
 
 **Veritabanı Dilleri:**
-- **SQLite(Değişebilir)**
+- **MySQL**
