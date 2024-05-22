@@ -64,7 +64,7 @@ Bu proje, fitness ve sağlıkla ilgilenen ve takviye ürünlerine ihtiyaç duyan
 
 **Görüntüler**
 ![alt text](https://i.imgur.com/ljSX2Cf.png)
-
-
-
+![alt text](https://i.imgur.com/j2eJzIY.png)
+![alt text](https://i.imgur.com/Jh4A7Mk.png)
+![alt text](https://i.imgur.com/7BvN0ZI.png)
 
