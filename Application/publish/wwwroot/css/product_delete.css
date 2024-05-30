@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.confirmation-box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-box p {
+    margin-bottom: 20px;
+}
+
+.confirmation-box button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirmation-box button:hover {
+    background-color: #c82333;
+}
+
+.confirmation-box button.cancel {
+    background-color: #007bff;
+    margin-left: 10px;
+}
+
+.confirmation-box button.cancel:hover {
+    background-color: #0056b3;
+}

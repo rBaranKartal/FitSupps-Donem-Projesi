@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FitSupps</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        
+        .loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.7); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999; 
+        }
+
+        .loader {
+            border: 10px dotted #f3f3f3; 
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        
+        body.loading {
+            background-color: white;
+            overflow: hidden; 
+        }
+
+        
+        #content {
+            display: none;
+        }
+    </style>
+    <script>
+        
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                const loaderWrapper = document.querySelector(".loader-wrapper");
+                loaderWrapper.parentElement.removeChild(loaderWrapper);
+                document.body.classList.remove("loading");
+                document.getElementById("content").style.display = "block";
+                document.body.style.overflow = "auto"; 
+            }, 1000); 
+        });
+
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.style.overflow = "hidden";
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <body class="loading">
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+        </div>
+        <div id="content">
+        </div>
+
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-2 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark" href="">S.S.S</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Yardım</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Hakkımızda</a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-dark pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center py-3 px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a href="" class="text-decoration-none">
+                    <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">FS</span>FitSupps</h1>
+                </a>
+            </div>
+            <div class="col-lg-6 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Ara">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-6 text-right">
+                <a href="" class="btn border">
+                    <i class="fas fa-heart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+                <a href="" class="btn border">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid">
+        <div class="row border-top px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 class="m-0">Kategoriler</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a>
+                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0 bg-light" id="navbar-vertical" style="width: calc(100% - 30px); z-index: 1;">
+                    <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown">Ekipman ve Giyim<i class="fa fa-angle-down float-right mt-1"></i></a>
+                            <div class="dropdown-menu position-absolute bg-secondary border-0 rounded-0 w-100 m-0">
+                                <a href="" class="dropdown-item">Erkek Kıyafet</a>
+                                <a href="" class="dropdown-item">Kadın Kıyafet</a>
+                                <a href="" class="dropdown-item">Spor Ekipmanları</a>
+                            </div>
+                        </div>
+                        <a href="" class="nav-item nav-link">PROTEİN</a>
+                        <a href="" class="nav-item nav-link">PERFORMANS</a>
+                        <a href="" class="nav-item nav-link">AMİNOASİT</a>
+                        <a href="" class="nav-item nav-link">HACİM</a>
+                        <a href="" class="nav-item nav-link">ZAYIFLAMA</a>
+                        <a href="" class="nav-item nav-link">VİTAMİNLER</a>
+                        <a href="" class="nav-item nav-link">AKSESUAR</a>
+                        <a href="" class="nav-item nav-link">GIDA</a>
+                        <a href="" class="nav-item nav-link">PAKETLER</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link">Ana Sayfa</a>
+                            <a href="shop.html" class="nav-item nav-link">Mağaza</a>
+                            <a href="detail.html" class="nav-item nav-link active">Protein Tozu</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Sayfalar</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="cart.html" class="dropdown-item">Sepet</a>
+                                    <a href="checkout.html" class="dropdown-item">Alışverişi Tamamla</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-nav ml-auto py-0">
+                            <a href="" class="nav-item nav-link">Giriş Yap</a>
+                            <a href="" class="nav-item nav-link">Üye Ol</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-secondary mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px">
+            <h1 class="font-weight-semi-bold text-uppercase mb-3">Protein Tozu</h1>
+            <div class="d-inline-flex">
+                <p class="m-0"><a href="">Ana Sayfa</a></p>
+                <p class="m-0 px-2">-</p>
+                <p class="m-0">Protein Tozu</p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Shop Detail Start -->
+    <div class="container-fluid py-5">
+        <div class="row px-xl-5">
+            <div class="col-lg-5 pb-5">
+                <div id="product-carousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner border">
+                        <div class="carousel-item active">
+                            <img class="w-100 h-100" src="img/product-1.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="w-100 h-100" src="img/product-2.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="w-100 h-100" src="img/product-3.jpg" alt="Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="w-100 h-100" src="img/product-4.jpg" alt="Image">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#product-carousel" data-slide="prev">
+                        <i class="fa fa-2x fa-angle-left text-dark"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#product-carousel" data-slide="next">
+                        <i class="fa fa-2x fa-angle-right text-dark"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-7 pb-5">
+                <h3 class="font-weight-semi-bold">ProteinOcn Protein Tozu</h3>
+                <div class="d-flex mb-3">
+                    <div class="text-primary mr-2">
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star"></small>
+                        <small class="fas fa-star-half-alt"></small>
+                        <small class="far fa-star"></small>
+                    </div>
+                    <small class="pt-1">(50 Reviews)</small>
+                </div>
+                <h3 class="font-weight-semi-bold mb-4">₺1500.00</h3>
+                <p class="mb-4">FitSupps.com Whey Proteini, GMP sertifikalı tesislerde üretilir ve servis başına 23 g protein sunar. Her serviste whey proteinden gelen 5,3 g BCAA, 10,9 g EAA ve 3,8 g glutamin öncüleri içeriğiyle, ihtiyacınız olan amino asit ihtiyacınızı karşılayacaktır. Protein kas kütlesinin artışına ve korunmasına katkıda bulunur. * Aynı zamanda protein, normal kemiklerin korunmasına yardımcı olur. *Bisküvi, mocha, kurabiye, tuzlu karamel, çikolata yer fıstığı, çikolata hindistan cevizi, çilek, baklava, çikolata ve muz aromalarına sahip Whey Protein, İngiltere’de üretilmektedir. Ham maddesi dünya çapında faaliyet gösteren bir süt ürünleri ve gıda şirketi olan Danimarka merkezli Arla Foods’a aittir. Şirket, kalite ve sürdürülebilirlik konularında önemli bir itibara sahiptir. Arla Foods'un WPC80 (Whey Protein Concentrate 80) ham maddesi, bu standartları karşılar.</p>
+                <div class="d-flex mb-3">
+                    <p class="text-dark font-weight-medium mb-0 mr-3">Sizes:</p>
+                    <form>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="size-1" name="size">
+                            <label class="custom-control-label" for="size-1">1KG (35 Servis)</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="size-2" name="size">
+                            <label class="custom-control-label" for="size-2">2KG (70 Servis)</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="size-3" name="size">
+                            <label class="custom-control-label" for="size-3">5KG (105 Servis)</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-flex mb-4">
+                    <p class="text-dark font-weight-medium mb-0 mr-3">Aromalar</p>
+                    <form>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="color-1" name="color">
+                            <label class="custom-control-label" for="color-1">Çikolata</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="color-2" name="color">
+                            <label class="custom-control-label" for="color-2">Kurabiye</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="color-3" name="color">
+                            <label class="custom-control-label" for="color-3">Çilek</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="color-4" name="color">
+                            <label class="custom-control-label" for="color-4">Tuzlu Karamel</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" class="custom-control-input" id="color-5" name="color">
+                            <label class="custom-control-label" for="color-5">Muz</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-flex align-items-center mb-4 pt-2">
+                    <div class="input-group quantity mr-3" style="width: 130px;">
+                        <div class="input-group-btn">
+                            <button class="btn btn-primary btn-minus" >
+                            <i class="fa fa-minus"></i>
+                            </button>
+                        </div>
+                        <input type="text" class="form-control bg-secondary text-center" value="1">
+                        <div class="input-group-btn">
+                            <button class="btn btn-primary btn-plus">
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i> Sepete Ekle</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row px-xl-5">
+            <div class="col">
+                <div class="nav nav-tabs justify-content-center border-secondary mb-4">
+                    <a class="nav-item nav-link active" data-toggle="tab" href="#tab-pane-1">Açıklama</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-2">Bilgi</a>
+                    <a class="nav-item nav-link" data-toggle="tab" href="#tab-pane-3">İncelemeler</a>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="tab-pane-1">
+                        <h4 class="mb-3">Ürün Açıklaması</h4>
+                        <p>Supplementler.com Whey Proteini üstün kaliteye sahip whey proteini içerir. İngiltere’de GMP sertifikalı tesislerde üretilen bu ürün, servis başına 23 g protein sunar. Her serviste whey proteinden gelen 5,3 g BCAA, 10,9 g EAA ve 3,8 g glutamin öncüleri içeriğiyle ihtiyacınız olan amino asit ihtiyacınızı en saf şekilde ve uygun maliyetle karşılayacaktır. Protein kas kütlesinin artışına ve korunmasına katkıda bulunur.* Aynı zamanda protein, normal kemiklerin korunmasına yardımcı olur.*Whey protein ham maddesi dünya çapında faaliyet gösteren bir süt ürünleri ve gıda şirketi olan Danimarka merkezli Arla Foods’a aittir. Şirket, kalite ve sürdürülebilirlik konularında önemli bir itibara sahiptir. Arla Foods'un WPC80 (Whey Protein Concentrate 80) ham maddesi, bu standartlara uygun olarak üretilir.</p>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-2">
+                        <h4 class="mb-3">Ekstra Bilgi</h4>
+                        <p>Yüksek kalite whey protein konsantresi, whey protein izolatı ve peptid formdaki whey protein hidrolizatı içeren Hardline Whey 3Matrix'in yenilenen formülü B6 vitamini ile desteklenmiştir. İlave şeker, karbonhidrat veya yağ içermez.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0">
+                                        - Arla Foods WPC80 marka protein ham madde
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        - B6 vitamini ilaveli
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        - Avrupa standartlarında ve GMP sertifikalı modern tesislerde üretim
+                                    </li>
+                                  </ul> 
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item px-0">
+                                        - İlave etken madde içermez.
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        - Ham madde menşe: Danimarka
+                                    </li>
+                                    <li class="list-group-item px-0">
+                                        - Yüksek servis
+                                    </li>
+                                  </ul> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tab-pane-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="mb-4">"ProteinOcn Protein Tozu İçin 1 İnceleme"</h4>
+                                <div class="media mb-4">
+                                    <img src="img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+                                    <div class="media-body">
+                                        <h6>Zubeyd Efe Dgc<small> - <i>08 Jul 2035</i></small></h6>
+                                        <div class="text-primary mb-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <p>Türkiye pazarında alabileceğimiz en iyi fiyat/performans whey protein diyebilirim kesinlikle. Hem içerik hem de tat olarak gayet kaliteli. Şimdiye kadar hem çikolatalı hem de tuzlu karamel kullandım. Benim damak tadıma göre tuzlu karamel çok daha üst seviyede diyebilirim. Çikolata aromasının biraz daha geliştirilmesi gerekiyor. Sonrasında bisküvi ve mocha eğer 2kg baklava aromasıda gelirse onu deneyeceğim. Ürünün 5kg olan versiyonuda çıkarsa gerçekten mükemmel olur. Servis başı maliyette ciddi oranda düşer diye düşünmekteyim. Umarım dikkate alınır.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="mb-4">Bir İnceleme Bırakın</h4>
+                                <div class="d-flex my-3">
+                                    <p class="mb-0 mr-2">Puanınız :</p>
+                                    <div class="text-primary">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="message">İncelemeniz</label>
+                                        <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name">Adınız</label>
+                                        <input type="text" class="form-control" id="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Mail Adresiniz</label>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+                                    <div class="form-group mb-0">
+                                        <input type="submit" value="Leave Your Review" class="btn btn-primary px-3">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shop Detail End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-dark mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <a href="" class="text-decoration-none">
+                    <h1 class="mb-4 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border border-white px-3 mr-1">FS</span>FitSupps</h1>
+                </a>
+                <p></p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Mithatpaşa Caddesi No469 35280 Küçükyalı KONAK/İZMİR</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>kartal.barann.0@gmail.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+90 552 802 95 35</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+90 232 243 24 44</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">FitSupps</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Ana Sayfa</a>
+                            <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>Kategoriler</a>
+                            <a class="text-dark mb-2" href="detail.html"><i class="fa fa-angle-right mr-2"></i>Protein</a>
+                            <a class="text-dark mb-2" href="cart.html"><i class="fa fa-angle-right mr-2"></i>Sepet</a>
+                            <a class="text-dark" href="contact.html"><i class="fa fa-angle-right mr-2"></i>İletişim</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Sözleşme ve Şartlar</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-dark mb-2" href=".html"><i class="fa fa-angle-right mr-2"></i>Mesafeli Satış Sözleşmesi</a>
+                            <a class="text-dark mb-2" href=".html"><i class="fa fa-angle-right mr-2"></i>İade Politikası</a>
+                            <a class="text-dark mb-2" href=".html"><i class="fa fa-angle-right mr-2"></i>Gizlilik Politikası</a>
+                            <a class="text-dark mb-2" href=".html"><i class="fa fa-angle-right mr-2"></i>Hizmet Kullanım Şartları</a>
+                            <a class="text-dark mb-2" href=".html"><i class="fa fa-angle-right mr-2"></i>Kişisel Veriler Politikası</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">E-Posta Bülteni</h5>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 py-4" placeholder="Adınız" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 py-4" placeholder="Mail Adresiniz"
+                                    required="required" />
+                            </div>
+                            <div>
+                                <button class="btn btn-primary btn-block border-0 py-3" type="submit">Abone Ol!</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row border-top border-light mx-xl-5 py-4">
+            <div class="col-md-6 px-xl-0">
+                <p class="mb-md-0 text-center text-md-left text-dark">
+                    &copy; <a class="text-dark font-weight-semi-bold" href="#">FitSupps</a>. Tüm Hakları Saklıdır. Designed
+                    by
+                    <a class="text-dark font-weight-semi-bold" href="https://github.com/rBaranKartal">Baran KARTAL</a><br>
+                </p>
+            </div>
+            <div class="col-md-6 px-xl-0 text-center text-md-right">
+                <img class="img-fluid" src="img/payments.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
